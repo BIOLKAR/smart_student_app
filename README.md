@@ -1,16 +1,68 @@
-# smart_student_app
 
-A new Flutter project.
+📱 Smart Student Assistant - AI Powered
+------------------------------------------------------------------------------------------------------------------------------
+📌 Introduction
+The Smart Student Assistant project is an intelligent mobile application designed to support students in their daily academic lives. By leveraging the power of Artificial Intelligence and cross-platform mobile development, it automates the management of learning resources and optimizes study organization.
 
-## Getting Started
+This system is particularly useful for:
 
-This project is a starting point for a Flutter application.
+Document Management: Digitizing and analyzing course notes.
 
-A few resources to get you started if this is your first Flutter project:
+Personalized Assistance: Helping with revisions through language models.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Accessibility: Centralizing academic tools directly on a smartphone.
+------------------------------------------------------------------------------------------------------------------------------
+🎯 Project Objectives
+The main objectives of this project are:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Automate Data Entry: Use the camera to capture documents and extract text.
+
+Facilitate Access to Information: Query academic databases in real-time.
+
+Intuitive Interface: Provide a smooth and modern user experience.
+
+Modularity: Allow easy integration of new AI functionalities.
+------------------------------------------------------------------------------------------------------------------------------
+🧠 Technologies Used
+The project is built on a modern and high-performance tech stack:
+
+Flutter & Dart: Main framework for cross-platform development (iOS/Android).
+
+Retrofit & Dio: Libraries used for secure REST API calls.
+
+Image Picker: For capturing and selecting documents via the camera.
+
+JSON Serializable: For robust data and model management.
+
+Dotenv: For secure management of API keys and environmental configurations.
+------------------------------------------------------------------------------------------------------------------------------
+🏗️ Project Architecture
+The system is organized into a modular architecture (Clean Architecture):
+
+Interface Layer (UI):
+
+Reactive Flutter widgets for immediate user interaction.
+
+Data Layer:
+
+Using Retrofit to communicate with remote servers or AI services.
+
+Image Processing:
+
+File acquisition via image_picker and preparation for analysis.
+
+Backend Services:
+
+Integration of cloud services for Natural Language Processing (NLP) or OCR.
+------------------------------------------------------------------------------------------------------------------------------
+📂 Project Structure
+Plaintext
+├── lib/                        # Dart source code
+│   ├── models/                 # Data models (JsonSerializable)
+│   ├── services/               # API clients (Retrofit/Dio)
+│   └── ui/                     # Screens and graphical components
+├── assets/                     # Images, fonts, and static files
+├── .env                        # Environment variables (API Keys)
+├── pubspec.yaml                # Flutter dependency management
+├── analysis_options.yaml       # Linter rules for code quality
+└── README.md                   # Project documentation
